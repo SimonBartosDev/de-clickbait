@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const dot = statusDiv.querySelector('.dot');
 
     try {
-        // Ping the health check endpoint we made in main.py
         const response = await fetch('http://localhost:8000/');
         const data = await response.json();
 
