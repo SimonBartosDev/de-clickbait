@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "De-Clickbait for YouTube",
+    "version": "1.0",
+    "description": "Replaces sensational YouTube titles with AI-generated factual summaries.",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "*://*.youtube.com/*",
+        "http://localhost:8000/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}

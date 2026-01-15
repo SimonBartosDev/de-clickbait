@@ -1,0 +1,28 @@
+# --- Python & Backend ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Secrets (VERY IMPORTANT) ---
+# Never upload your API keys to GitHub!
+.env
+backend/.env
+
+# --- OS & System Files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- Temporary Logs ---
+*.log
